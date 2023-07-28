@@ -1,0 +1,110 @@
+=====================================================================
+Modules VScode
+
+ESLint
+Git Graph
+GitLens
+Jest
+Jest Runner
+Prettier
+TODO Highlight
+=====================================================================
+Installer React
+
+npm install -g create-react-app
+create-react-app <monApp>
+==========================================================================================================================================
+Installer Redux
+
+npm i -s redux react-redux @reduxjs/toolkit @redux-devtools/extension
+=====================================================================
+Fichier package.json
+{
+  "name": "redux",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@redux-devtools/extension": "^3.2.5",
+    "@reduxjs/toolkit": "^1.9.5",
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "axios": "^0.26.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-redux": "^8.1.1",
+    "react-scripts": "5.0.1",
+    "redux": "^4.2.1",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
+=====================================================================
+Nouveau Git
+
+echo "# <monRepo>" >> README.m
+git init
+git add README.md
+git config --global user.email "sebastiengirard@yahoo.fr"
+git config --global user.name "bigcakeSg
+git commit -m "first commit"
+git branch -M main
+git remote add origin <repoAddresse> (exemple :https://github.com/bigcakeSg/reactExperiment.git)
+git push -u origin main
+=====================================================================
+Prettier
+
+Fichier .vscode/settings.json
+{
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "search.exclude": {
+    "**/node_modules": true,
+    ".happypack/**": true,
+    ".git/**": true,
+    "dist/**": true,
+    "**/*.snap": true
+  }
+}
+
+
+Fichier .prettierrc
+{
+  "tabWidth": 2,
+  "semi": true,
+  "singleQuote": true,
+  "trailingComma": "none",
+  "arrowParens": "always",
+  "endOfLine": "auto",
+  "jsxBracketSameLine": false,
+  "jsxSingleQuote": false,
+  "bracketSpacing": true,
+  "quoteProps": "as-needed"
+}
+=====================================================================
