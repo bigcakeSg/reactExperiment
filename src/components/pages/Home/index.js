@@ -1,10 +1,15 @@
-import React from 'react';
-import { useHome } from './hooks';
-
-const Home = () => {
-  const { name } = useHome();
-
-  return <div>Home Page - {name}</div>;
+const Home = (userId, setUserId) => {
+  return (
+    <>
+      <h1>Home Page</h1>
+      <input type="text" />
+      {/* <input
+        type="text"
+        value={userId}
+        onChange={(e) => setUserId(e.target.value)}
+      /> */}
+    </>
+  );
 };
 
 export default Home;

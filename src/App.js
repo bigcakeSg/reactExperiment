@@ -1,20 +1,15 @@
-import Home from './components/pages/Home';
-import FirstPage from './components/pages/FirstPage';
+import { Outlet } from 'react-router';
+import Menu from './components/shared/Menu';
 
-// TODO:
-// AXIOS
-// Routing
-// StyledComponents
-// Material UI
-// Tests
-
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <Home />
-      <FirstPage />
+    <div>
+      <Menu />
+      <div>
+        <Outlet />
+      </div>
     </div>
   );
-}
+};
 
 export default App;

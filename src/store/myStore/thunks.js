@@ -1,12 +1,13 @@
 import axios from 'axios';
 import { storeDataLoading, storeDataSuccess } from './actions';
 
-export const getStoreData = (test) => {
+export const getStoreData = (userId) => {
   return (dispatch) => {
     dispatch(storeDataLoading());
-    dispatch(storeDataSuccess({ name: 'bigcakeSg' }));
-    // return axios.get('http://...').then((res) => {
-    //   console.log(res);
-    // });
+    return axios
+      .get(`https://swapi.dev/api/people/${userId}/`)
+      .then(({ data }) => {
+        dispatch(storeDataSuccess(data));
+      });
   };
 };
