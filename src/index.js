@@ -1,10 +1,3 @@
-// TODO:
-// StyledComponents
-// Material UI
-// Tests
-// Typescript
-// Param Axios
-
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { Provider } from 'react-redux';
