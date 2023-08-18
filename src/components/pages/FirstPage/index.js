@@ -8,7 +8,6 @@ const FirstPage = () => {
     <>
       <h1>First Page ({userId})</h1>
       <div>Bonjour {loading ? '...' : name}</div>
-      <Link to={`/`}>Back</Link>
     </>
   );
 };
