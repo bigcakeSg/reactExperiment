@@ -1,5 +1,7 @@
 import { Link } from 'react-router-dom';
 import { useFirstPage } from './hooks';
+import { Button } from '@mui/material';
+import SettingsBackupRestoreIcon from '@mui/icons-material/SettingsBackupRestore';
 
 const FirstPage = () => {
   const { name, loading, userId } = useFirstPage();
@@ -7,8 +9,12 @@ const FirstPage = () => {
   return (
     <>
       <h1>First Page ({userId})</h1>
-      <div>Bonjour {loading ? '...' : name}</div>
-      <Link to={`/`}>Back</Link>
+      <p>Bonjour {loading ? '...' : name}</p>
+      <Link to={`/`}>
+        <Button variant="contained" startIcon={<SettingsBackupRestoreIcon />}>
+          Back
+        </Button>
+      </Link>
     </>
   );
 };
