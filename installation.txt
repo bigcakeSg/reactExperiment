@@ -114,3 +114,12 @@ Fichier .prettierrc
   "quoteProps": "as-needed"
 }
 =====================================================================
+Material UI
+
+npm install @mui/material @mui/styled-engine-sc styled-components
+npm install @fontsource/roboto
+npm install @mui/icons-material
+
+npm install @emotion/react 
+npm install @emotion/styled
+=====================================================================
